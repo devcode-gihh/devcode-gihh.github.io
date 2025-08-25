@@ -1,0 +1,1321 @@
+:root {
+  --sectionPadding: 0 5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  resize: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* navbar style start */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 5%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255);
+  z-index: 9998;
+}
+
+/* img.navbar-logo {
+  width: 4rem;
+  height: auto;
+} */
+h1.navbar-logo {
+  font-style: italic;
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.navbar-nav a {
+  margin: 1.5rem;
+  font-size: 1rem;
+  color: black;
+  font-weight: 300;
+}
+
+.navbar-nav a:hover {
+  color: #C1A27E;
+}
+
+.navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: .3rem;
+  border-bottom: .1rem solid #C1A27E;
+  transform: scaleX(0);
+  transition: .2s linear;
+}
+
+.navbar-nav a:hover::after {
+  transform: scaleX(0.7);
+}
+
+.navbar .navbar-extra {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.navbar-extra .btn-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcb994;
+  padding: .8rem 2.5rem;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.navbar-extra .icon-login {
+  display: none;
+}
+
+.navbar-extra .burger-menu {
+  display: none;
+}
+
+.burger-menu div {
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  margin: 6.5px;
+  transition: all .3s;
+}
+
+.navbar-extra .log-in {
+  width: 28px;
+  height: 28px;
+  color: black;
+  stroke-width: 1.8px;
+  margin: 0 0.8rem;
+  transition: all 0.5s ease;
+}
+/* navbar style end */
+
+/*? beranda style start */
+section.home {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.home .background {
+  min-height: 87vh;
+  background-image: url(../img/background/background12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+}
+
+.background h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 3px rgb(82, 82, 82);
+  font-size: 4.5rem;
+  line-height: 75px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.background .description {
+  width: 90%;
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  font-weight: 400;
+  margin-top: .5rem;
+}
+
+.background .over-bar {
+  width: 70%;
+  height: 7.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: -60px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.over-bar .bar-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: .6rem;
+  cursor: pointer;
+  width: 13rem;
+  color: black;
+  border-bottom: 2px solid #C1A27E;
+}
+
+.bar-category .category-icon {
+  font-size: 2.3rem;
+  color: #c29e74;
+  transition: all .6s linear;
+}
+
+.bar-category:hover .category-icon {
+  transform: rotate(360deg);
+}
+
+.bar-category p {
+  font-size: 1.2rem;
+  line-height: 18px;
+}
+
+.bar-category p span {
+  font-size: .8rem;
+  color: rgb(122, 122, 122);
+}
+/* beranda style end */
+
+/*? produk style start */
+.product {
+  padding: 7rem 5%;
+}
+
+/* terlaris style start */
+.product .product-bestseller {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.product-bestseller h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  margin-left: 5.7rem;
+  width: fit-content;
+}
+
+.product-bestseller h2::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: #C1A27E;
+  position: absolute;
+  top: 50%;
+  left: -45%;
+}
+
+.product-bestseller .par-product-bs {
+  width: 35%;
+  margin-top: .5rem;
+}
+
+.product-bestseller .slide-button-group {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  right: 0%;
+  top: 6%;
+}
+
+.slide-button-group .slide-button {
+  background-color: white;
+  border: 1px solid darkgrey;
+  color: #000;
+  padding: .7rem 1.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.slide-button-group .slide-button:hover {
+  background-color: rgba(213, 194, 172, 0.2);
+  background-color: rgb(245, 245, 245);
+}
+
+.product-bestseller .card-list-bs {
+  width: 100%;
+  height: 35rem;
+  margin-top: 2rem;
+  display: flex;
+  gap: 0 2rem;
+  overflow-x: auto;
+  scroll-snap-type: mandatory;
+  cursor: pointer;
+}
+
+/* Styling the scrollbar start*/
+.card-list-bs::-webkit-scrollbar {
+  width: 4px; 
+  height: 4px; 
+}
+
+.card-list-bs::-webkit-scrollbar-thumb {
+  background-color: #C1A27E;
+}
+
+.card-list-bs::-webkit-scrollbar-track {
+  background-color: #dfdfdf;
+}
+/* Styling the scrollbar end */
+
+.card-list-bs .card-item-bs {
+  flex-shrink: 0; 
+  width: 22rem;
+  text-align: center;
+}
+
+.card-item-bs .img-product-bs {
+  width: 100%;
+  height: 80%;
+}
+
+.img-product-bs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-item-bs h3 {
+  margin-top: .8rem;
+  text-transform: uppercase;
+}
+/* terlaris style end */
+
+/* daftar produk style start */
+.product .product-list {
+  padding-top: 7rem;
+}
+
+.product-list h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.product-list h2::before {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: #C1A27E;
+  position: absolute;
+  top: 50%;
+  left: 110%;
+}
+
+.product-list h2::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: #C1A27E;
+  position: absolute;
+  top: 50%;
+  left: -71%;
+}
+
+.product-list .par-product-ls {
+  width: 35%;
+  margin: .5rem auto 0;
+  text-align: center;
+}
+
+.product-list .title-category {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.product-list .button-category {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.button-category .btn-category {
+  width: 10rem;
+  padding: 1.2rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #dcb994;
+  background-color: white;
+  color: black;
+}
+
+.button-category .btn-category.category-active {
+  background-color: #dcb994;
+  border: none;
+  color: white;
+}
+
+.product-list .card-list-ls {
+  width: 100%;
+  height: 40rem;
+  margin-top: 1.5rem;
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  overflow-y: auto;
+  scroll-snap-type: mandatory;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.product-list .card-list-ls.product-active {
+  display: flex;
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+/* Styling the scrollbar start*/
+.card-list-ls::-webkit-scrollbar {
+  width: 4px; 
+  height: 4px; 
+}
+
+.card-list-ls::-webkit-scrollbar-thumb {
+  background-color: #C1A27E;
+}
+
+.card-list-ls::-webkit-scrollbar-track {
+  background-color: #dfdfdf;
+}
+/* Styling the scrollbar end */
+
+.card-list-ls .card-item-ls {
+  width: 18rem;
+  height: 70%;
+  background-color: rgb(244, 244, 244);
+  text-align: center;
+}
+
+.card-item-ls .img-product-ls {
+  width: 100%;
+  height: 80%;
+}
+
+.img-product-ls img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-item-ls h3 {
+  margin-top: .8rem;
+  text-transform: uppercase;
+}
+/* daftar produk style end */
+
+/* produk style end */
+
+/*? tentang style start */
+.about {
+  padding: 7rem 5%;
+  background-color: #fff8f0;
+}
+
+.about .row {
+  display: flex;
+  gap: 0px 20px;
+}
+
+.row .content {
+  flex: 1 1 35rem;
+  padding: 7rem 0 0 2rem;
+}
+
+.content h3 {
+  font-size: 1.3rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: fit-content;
+  position: relative;
+  margin-left: 5.3rem;
+}
+
+.content h3::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: #C1A27E;
+  position: absolute;
+  top: 50%;
+  left: -50%;
+}
+
+.content h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  width: 90%;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.content p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.content p.par-cream {
+  color: #b58957;
+}
+
+.row .about-img {
+  display: flex;
+  justify-content: end;
+  flex: 1 1 35rem;
+  height: 45rem;
+  overflow: hidden;
+  margin-right: 2rem;
+}
+
+.about-img .img-inside {
+  width: 60%;
+  height: 85%;
+  position: relative;
+}
+
+.img-inside img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-inside img.image-2 {
+  width: 80%;
+  height: 75%;
+  position: absolute;
+  left: -50%;
+  top: 35%;
+  border: 10px solid #fff8f0;
+}
+/* tentang style end */
+
+/*? kontak style start */
+.contact {
+  padding: 7rem 5%;
+  min-height: 100vh;
+}
+
+.contact h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  width: fit-content;
+}
+
+.contact h2::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: #C1A27E;
+  position: absolute;
+  top: 50%;
+  left: 113%;
+}
+
+.contact .par-contact {
+  width: 35%;
+  margin-top: .5rem;
+}
+
+.contact .maps-contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.maps-contact .information-mc {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.information-mc a.info-maps {
+  width: 50%;
+}
+
+a.info-maps img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.information-mc .info-contact {
+  /* background-color: rgba(255, 242, 226, .5); */
+  padding: 3rem;
+  width: 50%;
+}
+
+.info-contact h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+.info-contact h1::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -65%;
+  width: 70px;
+  height: 2px;
+  background-color: #b58957;
+}
+
+.info-contact h1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -65%;
+  width: 70px;
+  height: 2px;
+  background-color: #b58957;
+}
+
+.info-contact .info-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.info-icons .icon {
+  font-size: 2rem;
+}
+
+.info-icons .address,
+.info-icons .phone,
+.info-icons .email {
+  width: 80%;
+}
+
+.address h5,
+.phone h5,
+.email h5 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.info-icons p {
+  margin-top: .3rem;
+  color: rgb(112, 112, 112);
+}
+/* kontak style end */
+
+/*? footer style start */
+footer {
+  background-color: #c29e74;
+  text-align: center;
+  padding: 0.1rem 0 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+  font-size: 1.7rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: black;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .created {
+  font-size: 1rem;
+}
+
+footer .created a {
+  color: white;
+  font-weight: 700;
+}
+/* footer style end */
+
+/*? Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  /* Beranda */
+  .background h1 {
+    font-size: 3.7rem;
+    line-height: 75px;
+  }
+
+  .background .description {
+    font-size: 1.2rem;
+  }
+
+  .background .over-bar {
+    width: 75%;
+  }
+
+  .over-bar .bar-category {
+    width: 11rem;
+  }
+
+  .bar-category .category-icon {
+    font-size: 2rem;
+  }
+
+  .bar-category p {
+    font-size: 1.1rem;
+  }
+  
+  .bar-category p span {
+    font-size: .7rem;
+  }
+
+  /* produk */
+  /* produk terlaris */
+  .product-bestseller .par-product-bs {
+    width: 55%;
+  }
+  
+  .product-bestseller .slide-button-group {
+    top: 7%;
+  }
+  
+  .slide-button-group .slide-button {
+    padding: .6rem 1.1rem;
+    font-size: 1.4rem;
+  }
+  
+  .product-bestseller .card-list-bs {
+    height: 30rem;
+  }
+  
+  .card-list-bs .card-item-bs {
+    width: 15rem;
+  }
+
+  .card-item-bs h3 {
+    font-size: 1rem;
+  }
+
+  .card-item-bs p {
+    font-size: .9rem;
+  }
+
+  /* daftar produk */
+  .product .product-list {
+    padding-top: 6.5rem;
+  }
+
+  .product-list h2::before {
+    left: 111%;
+  }
+
+  .product-list .button-category {
+    margin-top: 1rem;
+  }
+  
+  .button-category .btn-category {
+    width: 8rem;
+    padding: 1rem;
+    font-size: .9rem;
+  }
+
+  .product-list .par-product-ls {
+    width: 45%;
+  }
+
+  .product-list .card-list-ls {
+    height: 30rem;
+    gap: 2rem;
+  }
+
+  .card-list-ls .card-item-ls {
+    width: 15rem;
+    height: 70%;
+  }
+
+  .card-item-ls h3 {
+    margin-top: .8rem;
+  }
+  
+  /* tentang */
+  .row .content {
+    padding: 2.5rem 0 0 2rem;
+  }
+  .content h2 {
+    font-size: 2rem;
+  }
+  
+  .content p {
+    font-size: .9rem;
+  }
+
+  .row .about-img {
+    flex: 1 1 35rem;
+    height: 33rem;
+  }
+  
+  .about-img .img-inside {
+    width: 70%;
+    height: 85%;
+  }
+
+  .img-inside img.image-2 {
+    width: 75%;
+    height: 70%;
+    position: absolute;
+    left: -48%;
+    top: 40%;
+    border: 10px solid #fff8f0;
+  }
+
+  /* kontak */
+  .contact .par-contact {
+    width: 60%;
+  }
+
+  .maps-contact .information-mc {
+    margin-top: 1rem;
+  }
+  
+  .information-mc .info-contact {
+    padding: 1rem;
+  }
+
+  .info-contact .info-icons {
+    gap: 1.3rem;
+  }
+  
+  .info-icons .address,
+  .info-icons .phone,
+  .info-icons .email {
+    width: 90%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  /* navbar */
+  img.navbar-logo {
+    width: 3.5rem;
+  }
+
+  .navbar .burger-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .animation-burger .line-1 {
+    transform: rotate(-45deg) translate(-5px, 6.9px);
+  }
+  .animation-burger .line-2 {
+    opacity: 0;
+  }
+  .animation-burger .line-3 {
+    transform: rotate(45deg) translate(-5px, -6.9px);
+  }
+
+  .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 99%;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+  }
+
+  .navbar .navbar-nav.active {
+    height: 18rem;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    margin: 0;
+    padding: .9rem;
+    font-size: 1rem;
+  }
+
+  .navbar-extra .btn-login {
+    display: none;
+  }
+
+  .navbar-extra .icon-login {
+    display: inline-block;
+    margin-top: .5rem;
+  }
+
+  /* Beranda */
+  .background h1 {
+    font-size: 2.85rem;
+    line-height: 60px;
+  }
+
+  .background .description {
+    font-size: .95rem;
+  }
+
+  .background .over-bar {
+    width: 80%;
+    height: 12rem;
+    gap: .2rem 0;
+    bottom: -90px;
+  }
+
+  .over-bar .bar-category {
+    width: 11rem;
+  }
+
+  .bar-category .category-icon {
+    font-size: 2.1rem;
+  }
+
+  .bar-category p {
+    font-size: 1.2rem;
+  }
+  
+  .bar-category p span {
+    font-size: .8rem;
+  }
+
+  /* produk */
+  .product-bestseller h2 {
+    font-size: 1.3rem;
+  }
+  
+  .product-bestseller h2::after {
+    left: -53%;
+  }
+
+  .product-bestseller .par-product-bs {
+    width: 70%;
+    font-size: .9rem;
+  }
+  
+  .product-bestseller .slide-button-group {
+    top: 7.5%;
+  }
+  
+  .slide-button-group .slide-button {
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .product-bestseller .card-list-bs {
+    height: 28rem;
+  }
+
+  .card-item-bs h3 {
+    font-size: .9rem;
+  }
+
+  .card-item-bs p {
+    font-size: .8em;
+  }
+
+  /* daftar produk */
+  .product .product-list {
+    padding-top: 6.3rem;
+  }
+
+  .product-list h2 {
+    font-size: 1.3rem;
+  }
+
+  .product-list h2::before {
+    left: 107%;
+  }
+
+  .product-list .par-product-ls {
+    width: 70%;
+    font-size: .9rem;
+  }
+
+  .product-list .button-category {
+    gap: 1.5rem;
+  }
+  
+  .button-category .btn-category {
+    width: 6rem;
+    padding: .9rem;
+    font-size: .8rem;
+  }
+
+  .product-list .card-list-ls {
+    height: 30rem;
+    gap: 1rem;
+  }
+
+  .card-list-ls .card-item-ls {
+    width: 10rem;
+    height: 60%;
+  }
+
+  .card-item-ls h3 {
+    font-size: .9rem;
+  }
+
+  .card-item-ls p {
+    font-size: .8em;
+  }
+
+  /* tentang */
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .row .content {
+    padding: 0;
+    order: 1;
+  }
+  
+  .content p {
+    font-size: .95rem;
+  }
+
+  .row .about-img {
+    order: 0;
+    height: 40rem;
+    margin-right: 0;
+  }
+
+  .img-inside img.image-2 {
+    width: 75%;
+    height: 75%;
+    left: -45%;
+    border: 13px solid #fff8f0;
+  }
+
+  /* kontak */
+  .contact {
+    padding: 7rem 5%;
+  }
+
+  .contact h2 {
+    font-size: 1.4rem;
+  }
+  
+  .contact .par-contact {
+    width: 90%;
+    font-size: .9rem;
+  }
+  
+  .contact .maps-contact {
+    margin-top: .5rem;
+  }
+  
+  .maps-contact .information-mc {
+    flex-wrap: wrap;
+  }
+  
+  .information-mc a.info-maps {
+    width: 100%;
+  }
+  
+  .information-mc .info-contact {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  
+  .info-contact h1 {
+    font-size: 2rem;
+  }
+  
+  .info-contact .info-icons {
+    gap: 1.5rem;
+  }
+  
+  .info-icons .address,
+  .info-icons .phone,
+  .info-icons .email {
+    width: 100%;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 490px) {
+  /* navbar */
+  nav {
+    height: 5rem;
+  }
+
+  img.navbar-logo {
+    width: 3rem;
+  }
+
+  /* Beranda */
+  .background h1 {
+    line-height: 45px;
+    font-size: 2rem;
+  }
+
+  .background .description {
+    font-size: .8rem;
+  }
+
+  .background .over-bar {
+    width: 90%;
+    height: 12rem;
+    gap: .2rem 0;
+    bottom: -90px;
+  }
+
+  .over-bar .bar-category {
+    width: 8.5rem;
+  }
+
+  .bar-category .category-icon {
+    font-size: 1.8rem;
+  }
+
+  .bar-category p {
+    font-size: .9rem;
+  }
+  
+  .bar-category p span {
+    font-size: .7rem;
+  }
+
+  /* produk */
+  .product .product-bestseller {
+    padding-bottom: 5rem;
+  }
+  .product-bestseller h2 {
+    margin-left: 4.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .product-bestseller h2::after {
+    width: 50px;
+    left: -45%;
+  }
+
+  .product-bestseller .par-product-bs {
+    width: 100%;
+    font-size: .8rem;
+  }
+  
+  .product-bestseller .slide-button-group {
+    top: 90%;
+    left: 40%;
+  }
+  
+  .slide-button-group .slide-button {
+    padding: .4rem .9rem;
+    font-size: 1.3rem;
+  }
+  
+  .product-bestseller .card-list-bs {
+    height: 20rem;
+    gap: 0 1rem;
+    margin-top: 1rem;
+  }
+
+  .product .card-item-bs {
+    width: 11rem;
+  }
+
+  /* daftar produk */
+  .product .product-list {
+    padding-top: 6rem;
+  }
+
+  .product-list h2 {
+    font-size: 1.2rem;
+  }
+
+  .product-list h2::before {
+    left: 107%;
+  }
+
+  .product-list h2::after {
+    left: -80%;
+  }
+
+  .product-list .par-product-ls {
+    width: 90%;
+    font-size: .8rem;
+  }
+
+  .product-list .button-category {
+    gap: 1rem;
+  }
+  
+  .button-category .btn-category {
+    width: 5rem;
+    padding: .7rem;
+    font-size: .7rem;
+  }
+
+  .product-list .card-list-ls {
+    height: 30rem;
+    gap: 2rem 1rem;
+  }
+
+  .card-list-ls .card-item-ls {
+    width: 45%;
+    height: 65%;
+  }
+
+  .card-item-ls h3 {
+    font-size: .9rem;
+  }
+
+  .card-item-ls p {
+    font-size: .8em;
+  }
+
+  /* tentang */
+  .content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .content p {
+    font-size: .85rem;
+  }
+
+  .row .about-img {
+    height: 28rem;
+    margin-right: 0;
+  }
+
+  .img-inside img.image-2 {
+    border: 9px solid #fff8f0;
+  }
+
+  /* kontak */
+  .contact {
+    padding: 7rem 5%;
+  }
+
+  .contact h2 {
+    font-size: 1.3rem;
+  }
+  
+  .contact .par-contact {
+    width: 100%;
+    font-size: .8rem;
+  }
+  
+  .contact .maps-contact {
+    margin-top: 0rem;
+  }
+  
+  .maps-contact .information-mc {
+    gap: 0px;
+  }
+  
+  .information-mc .info-contact {
+    padding: 1rem;
+  }
+  
+  .info-contact h1 {
+    font-size: 1.7rem;
+  }
+  
+  .info-contact .info-icons {
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .info-icons .icon {
+    font-size: 1.6rem;
+  }
+  
+  .address h5,
+  .phone h5,
+  .email h5 {
+    font-size: 1.1rem;
+  }
+  
+  .info-icons p {
+    font-size: .8rem;
+  }
+
+  /* footer */
+  footer .socials a {
+    font-size: 1.5rem;
+  }
+
+  footer .links a {
+    color: #fff;
+    padding: 0.7rem .7rem;
+    font-size: .8rem;
+  }
+
+  footer .created {
+    font-size: .9rem;
+  }
+}

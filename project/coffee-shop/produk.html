@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KULINER ANAK MUDA</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Kantin<span>skema</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="menu.html">Menu</a>
+        <a href="#produk" class="aktif">Produk</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Form Start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search Form End -->
+
+      <!-- Shopping Cart Start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/products/p5.jpg" alt="Product1">
+          <div class="item-detail">
+            <h3>Coffee Grounds</h3>
+            <div class="item-price">IDR 80K <span>IDR99K</span></div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/p2.jpg" alt="Product1">
+          <div class="item-detail">
+            <h3>Beef Burger Extra</h3>
+            <div class="item-price">IDR 50K <span>IDR 65K</span></div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/p1.jpg" alt="Product1">
+          <div class="item-detail">
+            <h3>Coffee Beans</h3>
+            <div class="item-price">IDR 99K <span>IDR 110K</span></div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+      <!-- Shopping Cart End-->
+
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Products Section Start -->
+    <section class="products" id="products">
+      <h2><span>Produk Unggulan</span> kami</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Fugiat quae nemo dolore? Ipsum, earum minima?</p>
+
+        <div class="row">
+          <div class="product-card">
+            <div class="product-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-image">
+              <img src="img/products/p1.jpg" alt="Product1">
+            </div>
+            <div class="product-content">
+              <h3>Coffee Beans</h3>
+              <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star"></i>
+              </div>
+              <div class="product-price">IDR 99K <span>IDR 110K</span></div>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-image">
+              <img src="img/products/p2.jpg" alt="Product1">
+            </div>
+            <div class="product-content">
+              <h3>Beef Burger Extra</h3>
+              <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star"></i>
+              </div>
+              <div class="product-price">IDR 50K <span>IDR 65K</span></div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-icons">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-image">
+              <img src="img/products/p5.jpg" alt="Product1">
+            </div>
+            <div class="product-content">
+              <h3>Coffee Grounds</h3>
+              <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+              </div>
+              <div class="product-price">IDR 80K <span>IDR 99K</span></div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Products Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/sandhikagalih" target="_blank"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://twitter.com/sandhikagalih" target="_blank"
+          ><i data-feather="twitter"></i
+        ></a>
+        <a href="https://facebook.com/sandhikagalih" target="_blank"
+          ><i data-feather="facebook"></i
+        ></a>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="menu.html">Menu</a>
+        <a href="#produk">Produk</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">mochamadsugiana</a>. | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Modal Box Item Detail Start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/products/p5.jpg" alt="Product 1">
+          <div class="product-content">
+            <h3>Coffee Beans</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Culpa vero necessitatibus blanditiis, hic maiores eum id 
+               voluptate optio quisquam amet fugiat et debitis, aliquid 
+               perferendis!</p>
+               <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+              </div>
+              <div class="product-price">IDR 90K <span>IDR 110K</span></div>
+              <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Box Aitem Detail End -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

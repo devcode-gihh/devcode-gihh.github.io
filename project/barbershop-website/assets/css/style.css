@@ -1,0 +1,826 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  resize: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* navbar style start */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 5%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9998;
+}
+
+img.navbar-logo {
+  width: 4rem;
+  height: auto;
+}
+
+.navbar-nav a {
+  margin: 1.5rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: 300;
+}
+
+.navbar-nav a:hover {
+  font-weight: 500;
+}
+
+.navbar-nav a.active {
+  margin: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #997950;
+  transition: .4s;
+}
+
+.navbar .navbar-extra {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.navbar-extra .btn-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #997950;
+  padding: .8rem 2.5rem;
+  color: rgb(255, 255, 255);
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.navbar-extra .icon-login {
+  display: none;
+}
+
+#hamburger-menu {
+  color: white;
+  display: none;
+}
+
+.navbar-extra .log-in {
+  width: 28px;
+  height: 28px;
+  color: rgb(255, 255, 255);
+  stroke-width: 1.8px;
+  margin: 0 0.8rem;
+  transition: all 0.5s ease;
+}
+/* navbar style end */
+
+/*? beranda style start */
+section.home {
+  width: 100%;
+  height: 100vh;
+}
+
+.home .background {
+  min-height: 100vh;
+  padding: .5px 5%;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.background h1 {
+  color: white;
+  margin-top: 18rem;
+  font-size: 4rem;
+  width: 50%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+
+h1 span {
+color: #997950;
+}
+
+.background p {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 100;
+  width: 40%;
+}
+
+.background a {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: #997950;
+  padding: 1.2rem 4rem;
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1.5px;
+}
+/* beranda style end */
+
+/*? tentang style start */
+.about {
+  padding: 7rem 10%;
+}
+
+.about h2.t-about {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about h2.t-about span {
+  color: #997950;
+}
+
+.about .row {
+  display: flex;
+  gap: 0px 30px;
+}
+
+.row .about-img {
+  flex: 1 1 35rem;
+  height: 38rem;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+}
+
+.row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.content h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  width: 90%;
+  text-transform: uppercase;
+}
+
+.content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.content p.par-bold {
+  font-weight: 600;
+}
+
+.content img {
+  bottom: 0rem;
+  right: 0rem;
+  position: absolute;
+  width: 90%;
+}
+
+.about .images {
+  margin-top: 5rem;
+}
+
+.images h3 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  width: 40%;
+  margin: auto;
+}
+
+.images .image-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px 30px;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+.image-group .img-1 {
+  width: 25%;
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  overflow: hidden;
+  background-position: center;
+  transition: .3s;
+}
+.image-group .img-2 {
+  width: 70%;
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 28% center;
+  object-fit: cover;
+  overflow: hidden;
+  transition: .3s;
+}
+.image-group .img-3 {
+  width: 70%;
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right 77%;
+  object-fit: cover;
+  overflow: hidden;
+  transition: .3s;
+}
+.image-group .img-4 {
+  width: 25%;
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.image-group .img-1:hover,
+.image-group .img-2:hover,
+.image-group .img-3:hover,
+.image-group .img-4:hover {
+  transform: scale(1.04);
+}
+
+.img-1 .transition,
+.img-4 .transition {
+  width: 100%;
+  height: 0;
+  transition: .3s;
+}
+
+.img-2 .transition,
+.img-3 .transition {
+  width: 0;
+  height: 100%;
+  transition: .3s;
+}
+
+.img-1:hover .transition,
+.img-2:hover .transition,
+.img-3:hover .transition,
+.img-4:hover .transition {
+  background-color: rgb(153, 121, 80, .4);
+  width: 100%;
+  height: 100%;
+}
+/* tentang style end */
+
+/*? layanan style start */
+.service {
+  padding: 7rem 5%;
+  background-color: #7876761c;
+}
+
+.service h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.service .service-card-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 20rem;
+}
+
+.service-card-group .service-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(102, 102, 102, 0.1);
+  width: 24%;
+  height: 33rem;
+  padding: 5rem 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.service-card .icon-service {
+  width: 7.5rem;
+  height: 7.5rem;
+  margin: 0 auto 2.5rem;
+  padding: 2rem;
+  background-color: rgba(202, 118, 8, 0.5);
+  transition: .6s;
+}
+
+.service-card:hover .icon-service {
+  background-color: rgba(88, 59, 21, 0.7);
+}
+
+.icon-service img {
+  width: 100%;
+}
+
+.service-card h3 {
+  margin-bottom: 1.7rem;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+}
+/* layanan style end */
+
+/*? kotak style start */
+
+.contact {
+  padding: 7rem 5%;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.contact h2 span {
+  color: #997950;
+}
+
+.contact .contact-us {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-us .maps-info {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(128, 128, 128, 0.466);
+  background-color: rgb(244, 244, 244);
+  width: 80rem;
+  height: 33rem;
+  margin: 1.5rem 0;
+}
+
+.maps-info a.maps {
+  width: 50%;
+  overflow: hidden;
+}
+
+
+a.maps img {
+  width: 100%;
+  height: auto;
+  object-position:center;
+  object-fit: cover;
+}
+
+.maps-info .information {
+  width: 50%;
+  padding: 2rem;
+}
+
+.information h3 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.information .information-icon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin: 2rem 0;
+}
+
+.information-icon h5 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.information-icon p {
+  font-size: 1rem;
+  color: grey;
+}
+
+.information a.btn-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #997950;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+}
+/* kontak style end */
+
+/*? footer style start */
+footer {
+  background-color: #997950;
+  text-align: center;
+  padding: 0.1rem 0 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: black;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .created {
+  font-size: 1rem;
+}
+
+footer .created a {
+  color: white;
+  font-weight: 700;
+}
+
+/* footer style end */
+
+/*? Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  /* beranda */
+  .background h1 {
+    font-size: 3.5rem;
+    width: 60%;
+  }
+
+  .background a {
+    padding: 1.2rem 3.5rem;
+    font-size: 1.2rem;
+  }
+
+  h1 span {
+    color: #997950;
+    text-shadow: rgba(255, 255, 255, 0.5) 1px 0 5px;
+  }
+
+  /* tentang */
+  .about h2 {
+    font-size: 2.4rem;
+  }
+
+  .row .about-img {
+    flex: 1 1 35rem;
+    height: 32rem;
+  }
+
+  .content h3 {
+    font-size: 1.4rem;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+  
+  .content p {
+    font-size: .9rem;
+  }
+
+  .images h3 {
+    font-size: 2rem;
+    width: 50%;
+  }
+  
+  .image-group .img-1,
+  .image-group .img-4 {
+    width: 30%;
+    height: 25rem;
+  }
+  .image-group .img-2,
+  .image-group .img-3 {
+    width: 65%;
+    height: 25rem;
+  }
+
+  /* layanan */
+  .service-card-group .service-card {
+    width: 27rem;
+    margin: 0 1rem 2rem;
+  }
+
+  .service .service-card-group {
+    justify-content: center;
+  }
+
+  /* kontak */
+  .contact-us .maps-info {
+    width: 57rem;
+    margin-top: 3rem;
+  }
+
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  /* navbar */
+  img.navbar-logo {
+    width: 3.5rem;
+  }
+
+  .navbar-nav a {
+    margin: 1.5rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: 300;
+  }
+
+  .navbar-nav a.active {
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgb(153, 121, 80);
+    width: 24rem;
+    height: 100vh;
+    transition: .5s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: rgb(255, 255, 255);
+    display: block;
+    margin: 1.5rem;
+    padding: .5rem;
+    font-size: 1rem;
+  }
+
+  .navbar-extra .btn-login {
+    display: none;
+  }
+
+  .navbar-extra .icon-login {
+    display: inline-block;
+  }
+
+  /* beranda */
+  .background h1 {
+    font-size: 3rem;
+    width: 88%;
+  }
+
+  .background a {
+    padding: 1.2rem 3.5rem;
+    font-size: 1.2rem;
+  }
+
+  h1 span {
+    color: #997950;
+    text-shadow: none;
+  }
+
+  .background p {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+
+  /* tentang */
+  .about {
+    margin-bottom: 10%;
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .row .about-img {
+    flex: 1 1 35rem;
+    height: 30rem;
+  }
+
+  .row .content {
+    padding: 0;
+  }
+
+  .content h3 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+    width: 25rem;
+  }
+  
+  .content p {
+    font-size: .9rem;
+  }
+
+  .images h3 {
+    font-size: 2rem;
+    width: 90%;
+  }
+
+  .image-group .img-1,
+  .image-group .img-2,
+  .image-group .img-3,
+  .image-group .img-4{
+    width: 100%;
+    height: 25rem;
+  }
+
+  .image-group .img-3 {
+    background-position: right 95%;
+  }
+
+  /* kontak */
+  .contact-us .maps-info {
+    display: flex;
+    flex-direction: column;
+    width: 41rem;
+    height: 60rem;
+    margin-top: 2rem;
+  }
+
+  .maps-info a.maps {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .maps-info .information {
+    width: 100%;
+  }
+
+  .information a.btn-location {
+    width: 100%;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 490px) {
+  /* navbar */
+  nav {
+    height: 5rem;
+  }
+
+  img.navbar-logo {
+    width: 3rem;
+  }
+
+  .navbar .navbar-nav {
+    width: 19rem;
+  }
+
+  /* beranda */
+  .background h1 {
+    margin-top: 20rem;
+    font-size: 2.3rem;
+    width: 95%;
+  }
+
+  .background a {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .background p {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  /* tentang */
+  .row .about-img {
+    flex: 1 1 35rem;
+    height: 25rem;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .content h2 {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  .about .row .content p {
+    font-size: 1.1rem;
+  }
+
+  .content img {
+    right: 2rem;
+    width: 100%;
+  }
+
+  .images h3 {
+    font-size: 2rem;
+    width: 90%;
+  }
+
+  /* layanan */
+  .service-card-group .service-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(102, 102, 102, 0.1);
+    width: 23rem;
+    height: 33rem;
+    padding: 5rem 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  /* kontak */
+  .contact-us .maps-info {
+    width: 95%;
+  }
+
+  /* footer */
+  footer .links a {
+    color: #fff;
+    padding: 0.7rem .7rem;
+    font-size: .8rem;
+  }
+
+  footer .created {
+    font-size: .9rem;
+  }
+
+}
