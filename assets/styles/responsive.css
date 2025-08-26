@@ -65,12 +65,8 @@
     height: 15px;
   }
 
-  .hero-right {
-    margin-top: 0.7rem;
-  }
-
   .hero-right img {
-    width: 83%;
+    width: 17rem;
   }
 
   /* start of service */
@@ -460,10 +456,11 @@
 
   .hero-right {
     order: 1;
+    margin-bottom: 1rem;
   }
 
   .hero-right img {
-    width: 80%;
+    width: 20rem;
   }
 
   /* Start of Experiences */
@@ -575,6 +572,11 @@
     margin: 1.3rem;
     padding: 0.4rem;
     font-size: 1.2rem;
+  }
+
+  /* hero */
+  .hero-right img {
+    width: 19rem;
   }
 
   /* skills */

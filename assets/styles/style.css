@@ -362,7 +362,6 @@ body.dark .hero-left a:hover {
 }
 
 .hero-right {
-  margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,7 +369,8 @@ body.dark .hero-left a:hover {
 }
 
 .hero-right img {
-  width: 85%;
+  width: 20.5rem;
+  border-radius: 1rem;
 }
 /* End of Hero */
 
