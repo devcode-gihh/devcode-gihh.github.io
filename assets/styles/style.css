@@ -115,7 +115,7 @@ a {
   height: 60px;
   border-radius: 50%;
   margin: 2rem;
-  z-index: 9998;
+  z-index: 9999;
   transition: all 0.3s ease-in-out;
 }
 
@@ -203,7 +203,7 @@ body.dark .pre-title::before {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 9999;
+  z-index: 9998;
   transition: all 0.8s ease-in-out;
 }
 

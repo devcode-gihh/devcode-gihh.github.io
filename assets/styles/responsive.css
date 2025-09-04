@@ -400,14 +400,14 @@
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255, .85);
     width: 23rem;
     height: 100vh;
     transition: all 0.3s ease-in-out;
   }
 
   body.dark .navbar nav {
-    background-color: rgb(26, 38, 52);
+    background: rgb(26, 38, 52, .85);
   }
 
   .navbar nav.active {
